@@ -1,0 +1,24 @@
+# Core data processing
+numpy
+pandas
+matplotlib
+scikit-learn
+
+# Spatial data processing
+geopandas
+rasterio
+shapely
+pyproj
+
+# STAC and data handling
+pystac-client
+stackstac
+pyyaml
+
+# Utilities
+python-box
+
+# Jupyter
+jupyter
+jupyterlab
+

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  data-loader:
+    build: .
+    container_name: data-loader-clay
+    ports:
+      - "8888:8888"
+    volumes:
+      - processed_images_data:/app/processed_images
+    environment:
+      - PYTHONPATH=/app
+      - JUPYTER_ENABLE_LAB=yes
+    working_dir: /app
+    command: >
+      sh -c "mkdir -p /app/processed_images && 
+              jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''"
+    restart: unless-stopped
+
+volumes:
+  processed_images_data:
