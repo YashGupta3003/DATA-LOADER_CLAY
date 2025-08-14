@@ -86,7 +86,7 @@ sudo systemctl status docker
 cd ~/Desktop
 
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/DATA-LOADER_CLAY.git
+git clone https://github.com/YashGupta3003/DATA-LOADER_CLAY.git
 
 # Navigate into the project directory
 cd DATA-LOADER_CLAY
